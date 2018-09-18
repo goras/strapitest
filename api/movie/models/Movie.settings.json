@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "movie",
+  "info": {
+    "name": "movie",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "character": {
+      "model": "character",
+      "via": "movies"
+    },
+    "genre": {
+      "model": "genre"
+    }
+  }
+}

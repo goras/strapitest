@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "character",
+  "info": {
+    "name": "character",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "movies": {
+      "collection": "movie",
+      "via": "character"
+    }
+  }
+}
